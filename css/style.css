@@ -1,5 +1,5 @@
 *{
-	box-sizing: border-box; 
+	box-sizing: border-box;
 	/* This makes the widths of elements more consistent
 		Full details here https://css-tricks.com/box-sizing/ */
 }
@@ -7,40 +7,62 @@
 body{
 	margin: 0px; /* Often browsers have a 5px margin by deafult*/
 	font-family: sans-serif;
+	background-image: url('images/wellington.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 section{
-	max-width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	width: 100%;
+	overflow: hidden;
+	background-color: rgba(234, 234, 234, 0.3)
+}
+
+.container{
+	float: right;
+	background: #1f2666;
 }
 
 header{
-	background-color: darkOrange;
+	background-color: #22a196;
 	color: white; /* more readable on an orange background */
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center
 }
 
 nav{
 	width: 100%;
 	height: 60px;
-	background-color: wheat;
+	padding: 0px;
+	top: 0px;
+	background-color: #1f2666;
+	position: fixed;
 }
 
-nav a, nav h3{
+nav h3{
 	float: left;
+	text-align: center;
 	margin: 0px;
 	line-height: 60px;
-	margin-left: 1em;
-	margin-right: 1em;
 	text-decoration: none;
+	padding-left: 10px;
+	padding-right:10px;
 }
 
+nav a{
+	float: right;
+	display: inline-block;
+	background-color: #1f2666;
+	color: #ffffff;
+	text-align: center;
+	line-height: 60px;
+	width: 20%;
+	height: 100%;
+	padding: 0px;
+}
 nav a:hover{
-	text-decoration: underline; /* Hover styles to let people know they can click it */
+	background-color: #6590d6; /* Hover styles to let people know they can click it */
 }
 
 
@@ -51,6 +73,7 @@ nav a:hover{
 	overflow: hidden;
 }
 
+
 .g-row img{
 	width: 100%; /*This makes all images in grids to be the size of their cell */
 }
@@ -60,9 +83,14 @@ nav a:hover{
 	float: left;
 }
 
-.g-30{
-	width: 30%;
+.g-20{
+	width: 20%;
 	float: left;
+}
+
+.g-20r{
+	width: 20%;
+	float: right;
 }
 
 .g-70{
@@ -76,5 +104,5 @@ nav a:hover{
 }
 
 .padded{
-	padding: 20px; /* I add this to cells to add a little padding*/
+	padding: 10px 10px;
 }
