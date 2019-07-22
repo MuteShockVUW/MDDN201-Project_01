@@ -6,28 +6,45 @@
 
 body{
 	margin: 0px; /* Often browsers have a 5px margin by deafult*/
-	font-family: sans-serif;
-	background-image: url('images/wellington.jpeg');
+	font-family: Do Hyeon;
+}
+
+.section{
+	width: 100%;
+	overflow: hidden;
+	background-image: url('../img/CCTVBackground.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.section2{
+	width: 100%;
+	overflow: hidden;
+	background-image: url('../img/PowerLines.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
 
-section{
-	width: 100%;
-	overflow: hidden;
-	background-color: rgba(234, 234, 234, 0.3)
-}
-
 .container{
 	float: right;
-	background: #1f2666;
+	background-color: rgba(234, 234, 234);
+	width: 50%;
+	color: #1e1e1e;
+	padding: 10px;
+}
+
+.container2{
+	float: left;
+	background-color: rgba(30, 30, 30);
+	width: 50%;
+	color: #eaeaea;
+	padding: 10px;
 }
 
 header{
-	background-color: #22a196;
-	color: white; /* more readable on an orange background */
-	padding-top: 20px;
-	padding-bottom: 20px;
+	background-color: #1e1e1e;
+	color: #eaeaea;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	text-align: center
 }
 
@@ -36,11 +53,14 @@ nav{
 	height: 60px;
 	padding: 0px;
 	top: 0px;
-	background-color: #1f2666;
+	background-color: #eaeaea;
+	color: #1e1e1e;
 	position: fixed;
 }
-
-nav h3{
+h1{
+	font-size: 300%;
+}
+nav h2{
 	float: left;
 	text-align: center;
 	margin: 0px;
@@ -53,19 +73,24 @@ nav h3{
 nav a{
 	float: right;
 	display: inline-block;
-	background-color: #1f2666;
-	color: #ffffff;
+	background-color: #eaeaea;
+	color: #1e1e1e;
 	text-align: center;
 	line-height: 60px;
 	width: 20%;
 	height: 100%;
+	font-size: 150%;
+	text-decoration: none;
 	padding: 0px;
 }
 nav a:hover{
-	background-color: #6590d6; /* Hover styles to let people know they can click it */
+	background-color: #1e1e1e;
+	color: #eaeaea;
 }
 
-
+p{
+	font-size: 125%;
+}
 
 /* Simple grid */
 .g-row{
@@ -105,4 +130,19 @@ nav a:hover{
 
 .padded{
 	padding: 10px 10px;
+}
+
+.article{
+	display: block;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #1e1e1e;
+	padding: 10px;
+}
+.article2{
+	display: block;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #eaeaea;
+	padding: 10px;
 }
