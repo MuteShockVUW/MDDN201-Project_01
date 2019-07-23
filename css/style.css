@@ -13,6 +13,14 @@ body{
 	background-size: cover;
 }
 
+.bodyCCTV{
+	font-family: Do Hyeon;
+	background-image: url('../img/CCTVCameraBackground.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
 article{
 	margin-top: 100px;
 }
@@ -21,6 +29,12 @@ article{
 	text-align: center;
 	padding: 100px 0px;
 	color: #eaeaea;
+}
+
+.IntroCCTV{
+	text-align: center;
+	padding: 100px 0px;
+	color: #1e1e1e;
 }
 
 .section{
@@ -66,6 +80,13 @@ article{
 	color: #1e1e1e;
 	padding: 10px;
 	height: 100%;
+}
+.containercctv{
+	display: center;
+	background-color: #eaeaea;
+	width: 70%;
+	margin: auto;
+	padding: 10px;
 }
 
 header{
@@ -136,14 +157,9 @@ p{
 	float: left;
 }
 
-.g-20{
-	width: 20%;
+.g-30{
+	width: 30%;
 	float: left;
-}
-
-.g-20r{
-	width: 20%;
-	float: right;
 }
 
 .g-70{
@@ -168,6 +184,13 @@ p{
 	padding: 10px;
 	height: 100%;
 }
+
+.article img{
+	display: inline-block;
+	float: right;
+}
+
+
 .article2{
 	display: block;
 	border-style: solid;
