@@ -7,6 +7,20 @@
 body{
 	margin: 0px; /* Often browsers have a 5px margin by deafult*/
 	font-family: Do Hyeon;
+	background-image: url('../img/Wellington.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+article{
+	margin-top: 100px;
+}
+
+.Intro{
+	text-align: center;
+	padding: 100px 0px;
+	color: #eaeaea;
 }
 
 .section{
@@ -15,6 +29,8 @@ body{
 	background-image: url('../img/CCTVBackground.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-size: cover;
+	height: 500px;
 }
 .section2{
 	width: 100%;
@@ -22,22 +38,34 @@ body{
 	background-image: url('../img/PowerLines.jpg');
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	height: 500px;
+}
+
+.section3{
+	width: 100%;
+	overflow: hidden;
+	background-image: url('../img/trafficlight.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 500px;
 }
 
 .container{
 	float: right;
-	background-color: rgba(234, 234, 234);
+	background-color: #eaeaea;
 	width: 50%;
 	color: #1e1e1e;
 	padding: 10px;
+	height: 100%;
 }
 
 .container2{
 	float: left;
-	background-color: rgba(30, 30, 30);
+	background-color: #eaeaea;
 	width: 50%;
-	color: #eaeaea;
+	color: #1e1e1e;
 	padding: 10px;
+	height: 100%;
 }
 
 header{
@@ -138,11 +166,29 @@ p{
 	border-width: 5px;
 	border-color: #1e1e1e;
 	padding: 10px;
+	height: 100%;
 }
 .article2{
 	display: block;
 	border-style: solid;
 	border-width: 5px;
-	border-color: #eaeaea;
+	border-color: #1e1e1e;
 	padding: 10px;
+	height: 100%;
+}
+
+@media(max-width: 768px){
+	header #logo
+	nav
+	nav a
+	nav h2
+	#container .container,
+	p{
+		float:none;
+		text-align: center;
+		width: 100%;
+		font-size: 75%;
+
+	}
+
 }
